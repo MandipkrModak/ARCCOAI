@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArccoAI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: #fff;
+            animation: gradientAnimation 10s ease infinite;
+        }
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.8);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            color: #00d4ff;
+        }
+        nav {
+            text-align: center;
+            background: rgba(0, 0, 0, 0.9);
+            padding: 10px 0;
+        }
+        nav a {
+            color: #00d4ff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            max-width: 900px;
+            margin: 30px auto;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+        section:hover {
+            transform: scale(1.05);
+        }
+        h2 {
+            color: #76e2f4;
+        }
+        p {
+            line-height: 1.6;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.8);
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        footer p {
+            margin: 0;
+        }
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        .ai-image {
+            display: block;
+            margin: 20px auto;
+            width: 100%;
+            max-width: 500px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+        .links {
+            margin: 20px 0;
+            text-align: center;
+        }
+        .links a {
+            color: #00d4ff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1.1em;
+        }
+        .links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ARCCOAI</h1>
+    </header>
+    <nav>
+        <a href="#purpose" onclick="showTab('purpose')">Purpose</a>
+        <a href="#aim" onclick="showTab('aim')">Aim</a>
+        <a href="#details" onclick="showTab('details')">Details</a>
+        <a href="#dataset" onclick="showTab('dataset')">Datasets</a>
+        <a href="#links" onclick="showTab('links')">Links</a>
+    </nav>
+    <section id="purpose" class="tab-content active">
+        <h2>Purpose</h2>
+        <img src="https://thefusioneer.com/wp-content/uploads/2023/11/5-AI-Advancements-to-Expect-in-the-Next-10-Years-scaled.jpeg" alt="AI Purpose" class="ai-image">
+        <p>Our company is dedicated to providing exceptional services and innovative solutions to meet our clients' needs.</p>
+    </section>
+    <section id="aim" class="tab-content">
+        <h2>Aim</h2>
+        <img src="https://via.placeholder.com/500x300?text=AI+Aim" alt="AI Aim" class="ai-image">
+        <p>To build advanced projects on AI and revolutionize the industry with cutting-edge technology.</p>
+    </section>
+    <section id="details" class="tab-content">
+        <h2>Details</h2>
+        <img src="https://via.placeholder.com/500x300?text=AI+Details" alt="AI Details" class="ai-image">
+        <p>ARCCOAI is a startup focused on delivering transformative AI solutions. Our team is committed to pushing the boundaries of artificial intelligence, ensuring innovation, growth, and sustainability in all projects we undertake.</p>
+    </section>
+    <section id="dataset" class="tab-content">
+        <h2>Datasets</h2>
+        <img src="https://via.placeholder.com/500x300?text=AI+Datasets" alt="AI Datasets" class="ai-image">
+        <p>We provide high-quality AI datasets to facilitate research and development. Our datasets are curated for various industries, ensuring accuracy and diversity.</p>
+    </section>
+    <section id="links" class="tab-content">
+        <h2>Useful Links</h2>
+        <div class="links">
+            <a href="https://www.example.com" target="_blank">Example Link 1</a>
+            <a href="https://www.example.com" target="_blank">Example Link 2</a>
+            <a href="https://www.example.com" target="_blank">Example Link 3</a>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 ARCCOAI. All rights reserved.</p>
+    </footer>
+    <script>
+        function showTab(tabId) {
+            document.querySelectorAll('.tab-content').forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(tabId).classList.add('active');
+        }
+    </script>
+</body>
+</html>
